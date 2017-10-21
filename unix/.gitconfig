@@ -1,0 +1,7 @@
+[user]
+	email = vpaivatorres@gmail.com
+	name = Victor Torres
+[core]
+	excludesfile = /home/victortorres/.gitignore
+[push]
+	default = simple
