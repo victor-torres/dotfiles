@@ -6,6 +6,7 @@ sudo pacman -Sy libmariadbclient
 sudo pacman -Sy swig
 sudo pacman -Sy rsync
 sudo pacman -Sy exfat-utils
+sudo pacman -Sy transmission-gtk
 
 # Yaourt packages
 yaourt -S arc-gtk-theme
