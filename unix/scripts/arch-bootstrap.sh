@@ -12,7 +12,9 @@ sudo pacman -Sy transmission-gtk
 yaourt -S arc-gtk-theme
 yaourt -S slack-desktop
 yaourt -S google-chrome
+yaourt -S chrome-gnome-shell-git
 
 # Python packages
 sudo pip install virtualenvwrapper
 sudo pip install wakatime
+sudo pip install mercurial
