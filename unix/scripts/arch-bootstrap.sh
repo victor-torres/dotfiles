@@ -16,6 +16,10 @@ sudo pacman -S swig
 sudo pacman -S rsync
 sudo pacman -S exfat-utils
 sudo pacman -S zsh
+sudo pacman -S tmux
+sudo pacman -S vim
+sudo pacman -S git
+sudo pacman -S lastpass-cli
 
 # Python packages
 sudo pip install virtualenvwrapper
