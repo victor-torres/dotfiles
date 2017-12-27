@@ -1,4 +1,6 @@
 #!/bin/sh
+export LPASS_DISABLE_PINENTRY=1
+
 if [ -z /usr/bin/lpass ] ; then
     echo "You need to install LastPass CLI."
     exit 1
