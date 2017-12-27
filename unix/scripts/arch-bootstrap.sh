@@ -15,6 +15,7 @@ sudo pacman -S libmariadbclient
 sudo pacman -S swig
 sudo pacman -S rsync
 sudo pacman -S exfat-utils
+sudo pacman -S zsh
 
 # Python packages
 sudo pip install virtualenvwrapper
@@ -34,3 +35,6 @@ if [ $DESKTOP ] ; then
     yaourt -S chrome-gnome-shell-git
 
 fi
+
+# Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
