@@ -5,4 +5,4 @@ install:
 	ln -sf $(CURDIR)/.zshrc ~/.zshrc
 
 	mkdir -p ~/.oh-my-zsh/custom/themes
-	ln -sf $(CURDIR)/themes/victortorres.zsh-theme ~/.oh-my-zsh/custom/themes/victortorres.zsh-theme
+	ln -sf $(CURDIR)/.oh-my-zsh/custom/themes/victortorres.zsh-theme ~/.oh-my-zsh/custom/themes/victortorres.zsh-theme
