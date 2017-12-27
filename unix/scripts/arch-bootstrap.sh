@@ -1,5 +1,5 @@
 # archlinux.fr
-if [ -n "grep archlinuxfr /etc/pacman.conf" ] ; then
+if !(grep -q archlinuxfr /etc/pacman.conf) ; then
     sudo sh -c "cat <<EOF >> /etc/pacman.conf
 [archlinuxfr]
 SigLevel = Never
