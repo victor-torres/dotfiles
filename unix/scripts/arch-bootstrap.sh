@@ -20,6 +20,7 @@ sudo pacman -S tmux
 sudo pacman -S vim
 sudo pacman -S git
 sudo pacman -S lastpass-cli
+sudo pacman -S wget
 
 # Python packages
 sudo pip install virtualenvwrapper
