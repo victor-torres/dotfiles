@@ -92,3 +92,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias twitter="command-line-tweeter view | less"
+alias tweet="command-line-tweeter send"

@@ -12,3 +12,4 @@ if ! lpass status | grep -q Logged ; then
 fi
 
 export WAKATIME_API_KEY="$(lpass show --name "Wakatime API Key" --notes)"
+lpass show command-line-tweeter --notes > ~/.cred.toml

@@ -42,3 +42,7 @@ fi
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# command-line-tweeter
+sudo wget https://github.com/vmchale/command-line-tweeter/releases/download/1.0.1.32/tweet-x86_64-unkown-linux-gnu -O /usr/local/bin/command-line-tweeter
+sudo chmod +x /usr/local/bin/command-line-tweeter
