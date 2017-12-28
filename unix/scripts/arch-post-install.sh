@@ -21,8 +21,9 @@ systemctl enable dhcpcd
 passwd
 
 # GRUB
-pacman S grub os-prober
+pacman -S grub
+# You can also install os-prober if you
+# will have multiple operating systems
+# pacman -S os-prober
 grub-install /dev/sda
 grub-mkconfig o /boot/grub/grub.cfg
-
-
