@@ -6,3 +6,4 @@ lpass show --name id_rsa --notes > ~/.ssh/id_rsa
 lpass show --name id_rsa.pub --notes > ~/.ssh/id_rsa.pub
 
 cat ~/.ssh/id_rsa.pub | sudo tee /root/.ssh/authorized_keys
+cat ~/.ssh/id_rsa.pub | tee ~/.ssh/authorized_keys
