@@ -41,6 +41,24 @@ if [ $DESKTOP ] ; then
 
 fi
 
+if [ $VBOX ] ; then
+    sudo pacman -S virtualbox-guest-utils
+    echo "vboxsf" | sudo tee /etc/modules-load.d/virtualbox.conf
+    echo "vboxguest" | sudo tee -a /etc/modules-load.d/virtualbox.conf
+    sudo modprobe -a vboxsf
+
+    if [ $DESKTOP ] ; then
+        echo "vboxvideo" | sudo tee -a /etc/modules-load.d/virtualbox.conf
+	sudo modprobe -a vboxvideo
+    fi
+
+    sudo systemctl enable vboxservice.service
+    sudo systemctl start vboxservice.service
+
+    sudo groupadd vboxsf
+    sudo gpasswd -a $USER vboxsf
+fi
+
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
