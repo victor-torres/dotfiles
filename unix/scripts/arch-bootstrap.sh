@@ -21,6 +21,7 @@ sudo pacman -S vim
 sudo pacman -S git
 sudo pacman -S lastpass-cli
 sudo pacman -S wget
+sudo pacman -S terminator
 
 # Yaourt packages
 yaourt -S ledger
