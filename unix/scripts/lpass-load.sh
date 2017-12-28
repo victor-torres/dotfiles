@@ -11,5 +11,6 @@ if ! lpass status | grep -q Logged ; then
     exit 1
 fi
 
-export WAKATIME_API_KEY="$(lpass show --name "Wakatime API Key" --notes)"
-lpass show command-line-tweeter --notes > ~/.cred.toml
+lpass show .cred.toml --notes > ~/.cred.toml
+lpass show .wakatime.cfg --notes > ~/.wakatime.cfg
+
