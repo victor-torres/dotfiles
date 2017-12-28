@@ -1,0 +1,32 @@
+[ui]
+username=Victor Torres <vpaivatorres@gmail.com>
+
+[extensions]
+shelve=
+color=
+rebase=
+progress=
+strip=
+transplant=
+record=
+eol=
+
+[eol]
+native = LF
+only-consistent = False
+
+[alias]
+jira = !$HG up `$HG branches | grep $1 | cut -d ' ' -f1`
+jiracommit = !$HG commit -m "`$HG branch | cut -d'-' -f1,2`: $1"
+jiraci = jiracommit
+mergecommit = !$HG pull --rebase && $HG merge $1 && $HG commit -m "Merge $1 -> $($HG branch)"
+mergeci = mergecommit
+mci = mergecommit
+dummycommit = !touch foo; $HG add foo; $HG commit -m "$1"; $HG rm foo; $HG commit --amend -m "$1"
+dci = dummycommit
+logcat = !$HG log --config pager.pager=cat $@
+diffcat = !$HG diff --config pager.pager=cat $@
+
+[trusted]
+users = root dev
+groups = root dev

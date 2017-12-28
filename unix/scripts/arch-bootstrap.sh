@@ -22,10 +22,12 @@ sudo pacman -S git
 sudo pacman -S lastpass-cli
 sudo pacman -S wget
 
+# Yaourt packages
+yaourt -S ledger
+
 # Python packages
 sudo pip install virtualenvwrapper
 sudo pip install wakatime
-sudo pip install mercurial
 
 # Desktop
 if [ $DESKTOP ] ; then
