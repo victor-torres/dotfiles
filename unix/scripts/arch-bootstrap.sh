@@ -22,6 +22,11 @@ sudo pacman -S git
 sudo pacman -S lastpass-cli
 sudo pacman -S wget
 sudo pacman -S terminator
+sudo pacman -S acpi
+sudo pacman -S grub
+sudo pacman -S os-prober
+sudo pacman -S dnsutils
+sudo pacman -S htop
 
 # Yaourt packages
 yaourt -S ledger

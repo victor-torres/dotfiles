@@ -32,7 +32,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (which-key ledger-mode wakatime-mode))))
+ '(package-selected-packages (quote (elixir-mode which-key ledger-mode wakatime-mode))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
