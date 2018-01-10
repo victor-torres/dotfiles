@@ -63,6 +63,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
+source .secrets
 source virtualenvwrapper.sh
 
 # User configuration
@@ -99,3 +100,4 @@ export LC_CTYPE=UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias twitter="command-line-tweeter view | less"
 alias tweet="command-line-tweeter send"
+alias sssh="ssh -lroot -p2222"
