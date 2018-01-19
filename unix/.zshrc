@@ -63,7 +63,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source .secrets
+source ~/.secrets
 source virtualenvwrapper.sh
 
 # User configuration
