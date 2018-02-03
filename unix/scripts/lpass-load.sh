@@ -14,4 +14,5 @@ fi
 lpass show .cred.toml --notes > ~/.cred.toml
 lpass show .wakatime.cfg --notes > ~/.wakatime.cfg
 lpass show .secrets --notes > ~/.secrets
+lpass show .pypirc --notes > ~/.pypirc
 
