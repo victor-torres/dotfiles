@@ -1,19 +1,25 @@
 [ui]
-username=Victor Torres <vpaivatorres@gmail.com>
+username = Victor Torres <vpaivatorres@gmail.com>
+merge = p4
 
 [extensions]
-shelve=
-color=
-rebase=
-progress=
-strip=
-transplant=
-record=
-eol=
+shelve =
+color =
+rebase =
+progress =
+strip =
+transplant =
+record =
+eol =
 
 [eol]
 native = LF
 only-consistent = False
+
+[merge-tools]
+p4.executable = p4merge
+p4.gui = True
+p4.args = $base $local $other $output
 
 [alias]
 jira = !$HG up `$HG branches | grep $1 | cut -d ' ' -f1`
