@@ -27,6 +27,7 @@ sudo pacman -S grub
 sudo pacman -S os-prober
 sudo pacman -S dnsutils
 sudo pacman -S htop
+sudo pacman -S xclip
 
 # Yaourt packages
 yaourt -S ledger
@@ -73,3 +74,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # command-line-tweeter
 sudo wget https://github.com/vmchale/command-line-tweeter/releases/download/1.0.1.32/tweet-x86_64-unkown-linux-gnu -O /usr/local/bin/command-line-tweeter
 sudo chmod +x /usr/local/bin/command-line-tweeter
+
+sudo cp pbcopy.sh /usr/local/bin/pbcopy
+sudo chmod +x /usr/local/bin/pbcopy
