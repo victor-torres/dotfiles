@@ -75,5 +75,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 sudo wget https://github.com/vmchale/command-line-tweeter/releases/download/1.0.1.32/tweet-x86_64-unkown-linux-gnu -O /usr/local/bin/command-line-tweeter
 sudo chmod +x /usr/local/bin/command-line-tweeter
 
-sudo cp pbcopy.sh /usr/local/bin/pbcopy
-sudo chmod +x /usr/local/bin/pbcopy
+sudo ln -sf $PWD/pbcopy.sh /usr/local/bin/pbcopy
+sudo ln -sf $PWD/pbpaste.sh /usr/local/bin/pbpaste
