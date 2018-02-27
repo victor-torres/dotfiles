@@ -72,8 +72,16 @@ fi
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # command-line-tweeter
+# FIXME: check if file exists before downloading it
 sudo wget https://github.com/vmchale/command-line-tweeter/releases/download/1.0.1.32/tweet-x86_64-unkown-linux-gnu -O /usr/local/bin/command-line-tweeter
 sudo chmod +x /usr/local/bin/command-line-tweeter
 
+# TODO: check if we could turn it into an alias
 sudo ln -sf $PWD/pbcopy.sh /usr/local/bin/pbcopy
 sudo ln -sf $PWD/pbpaste.sh /usr/local/bin/pbpaste
+
+# p4merge
+# FIXME: check if file exists before downloading it
+wget http://www.perforce.com/downloads/perforce/r17.3/bin.linux26x86_64/p4v.tgz -O /tmp/p4v.tgz
+sudo tar -C /usr/local -xvf /tmp/p4v.tgz
+sudo ln -s /usr/local/p4v-2017.3.1601999/bin/p4merge /usr/local/bin/p4merge
