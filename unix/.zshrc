@@ -90,6 +90,16 @@ export LC_CTYPE=UTF-8
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+function ssh-keyrescan() {
+    if [ -z "$1" ] ; then
+        echo "Usage: $0 <hostname or ip address>"
+        return
+    fi
+
+    ssh-keygen -R "$1"
+    ssh-keyscan -H "$1" >> ~/.ssh/known_hosts
+}
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
