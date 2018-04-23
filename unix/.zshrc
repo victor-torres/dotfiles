@@ -111,3 +111,4 @@ function ssh-keyrescan() {
 alias twitter="command-line-tweeter view | less"
 alias tweet="command-line-tweeter send"
 alias sssh="ssh -lroot -p2222"
+alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,node_modules,vendor,app_bundles}'
