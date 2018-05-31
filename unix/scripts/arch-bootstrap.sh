@@ -28,6 +28,8 @@ sudo pacman -S os-prober
 sudo pacman -S dnsutils
 sudo pacman -S htop
 sudo pacman -S xclip
+sudo pacman -S strace
+sudo pacman -S dropbox
 
 # Yaourt packages
 yaourt -S ledger
