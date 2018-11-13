@@ -64,6 +64,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 source ~/.secrets
+
+export VIRTUALENVWRAPPER_PYTHON=python3
 source virtualenvwrapper.sh
 
 # User configuration
