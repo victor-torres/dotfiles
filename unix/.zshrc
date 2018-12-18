@@ -102,6 +102,10 @@ function ssh-keyrescan() {
     ssh-keyscan -H "$1" >> ~/.ssh/known_hosts
 }
 
+if [[ "$OSTYPE" == "darwin"* ]] ; then
+    ssh-add -K * &> /dev/null
+fi
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
