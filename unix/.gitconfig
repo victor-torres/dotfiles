@@ -5,3 +5,21 @@
 	excludesfile = ~/.gitignore
 [push]
 	default = current
+[merge]
+	tool = p4merge
+[mergetool]
+	keepBackup = false
+	keepTemporaries = false
+	trustExitCode = false
+	prompt = false
+[mergetool "p4merge"]
+	cmd = "/usr/local/bin/p4merge $PWD/$BASE $PWD/$LOCAL $PWD/$REMOTE $PWD/$MERGED"
+[diff]
+    tool = p4merge
+[difftool]
+	keepBackup = false
+	keepTemporaries = false
+	trustExitCode = false
+	prompt = false
+[difftool "p4merge"]
+	cmd = "/usr/local/bin/p4merge $PWD/$LOCAL $PWD/$REMOTE"
