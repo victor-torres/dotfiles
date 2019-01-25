@@ -103,7 +103,7 @@ function ssh-keyrescan() {
 }
 
 if [[ "$OSTYPE" == "darwin"* ]] ; then
-    ssh-add -K * &> /dev/null
+    ssh-add -K ~/.ssh/* &> /dev/null
 fi
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
