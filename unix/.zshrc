@@ -118,3 +118,13 @@ alias twitter="command-line-tweeter view | less"
 alias tweet="command-line-tweeter send"
 alias sssh="ssh -lroot -p2222"
 alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,node_modules,vendor,app_bundles}'
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/victortorres/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/victortorres/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/victortorres/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/victortorres/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH=$PATH:$HOME/.composer/vendor/bin
+export ANDROID_HOME=/Users/victortorres/Library/Android/sdk/
+
