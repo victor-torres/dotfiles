@@ -6,6 +6,7 @@ brew install ledger
 brew install rsync
 brew install tmux
 brew install tmate
+brew install watch
 
 brew cask install p4merge
 
