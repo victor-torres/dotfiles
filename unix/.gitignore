@@ -1,7 +1,14 @@
 *.swp
 *.pyc
+
+.DS_Store
 .idea/
+.vscode/
+*.egg-info/
+*.pytest_cache/
+
 __pycache__/
 egg-info/
+node_modules/
 *~
 
