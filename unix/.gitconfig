@@ -1,6 +1,7 @@
 [user]
 	email = vpaivatorres@gmail.com
 	name = Victor Torres
+	signingkey = 5A646C47A34D7752
 [core]
 	excludesfile = ~/.gitignore
 [push]
@@ -23,3 +24,5 @@
 	prompt = false
 [difftool "p4merge"]
 	cmd = "/usr/local/bin/p4merge $PWD/$LOCAL $PWD/$REMOTE"
+[commit]
+	gpgsign = true
